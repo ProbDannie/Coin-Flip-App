@@ -1,4 +1,5 @@
-#**Coin Flip App**
+#Coin Flip App
+
 A simple Electron app for flipping a coin
 Click the coin or the button to get heads or tails and a counter keeps track of the results. 
 
