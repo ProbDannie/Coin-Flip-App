@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Coin Flip</title>
+
+  <link rel="icon" type="image/x-icon" href="images/favi.ico">
+
+</head>
+<body>
+  <div class="titlebar">Coin Flip</div>
+
+  <div id=""title">
+    <h2 id="creator-name">ProbablyDannie's</h2>
+    <h3 id="app-name">Coin Flip</h3>
+  </div>
+
+  <div id="coinContainer" onclick="flipFunction()">
+    <div id="coin">
+      <img id="heads" src="images/heads.png"/>
+      <img id="tails" src="images/tails.png"/>
+    </div>
+  </div>
+  
+  <div id="results">
+    <p id="result">Flip A Coin</p>
+  </div>
+
+  <div class="counters">
+    Heads: <span id="HeadsCounter"> 0 </span> Tails: <span id="TailsCounter"> 0 </span>
+  </div>
+
+  <div class="flipbutton">
+    <button id="flip" onclick="flipFunction()"> FLIP</button>
+  </div>
+
+  <script src = "index.js"></script>
+
+</body>
+</html>

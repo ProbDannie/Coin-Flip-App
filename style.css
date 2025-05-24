@@ -1,0 +1,208 @@
+html {
+  height: 100%;
+}
+
+
+body {
+  background: linear-gradient(180deg, #D9DCEE 8.81%, #F6CBE3 75.86%);
+  display: flex;
+  min-height: 100%;
+  padding: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+}
+
+.titlebar {
+  height: 30px;
+  width: 100%;
+  background: #F6CBE3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-app-region: drag;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+
+}
+
+.window-buttons {
+  -webkit-app-region: no-drag;
+}
+
+
+
+#title {
+  display: flex;
+  width: 185px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#creator-name {
+  margin-top: 30px;
+  color: #000;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+#app-name {
+  color: #0B0B0B;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#coinContainer {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+#coin {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+#coin img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  backface-visibility: hidden;
+}
+
+
+#heads {
+  transform: rotateX(0deg);
+}
+
+#tails {
+  transform: rotateX(180deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+#results {
+  color: #FFF;
+  text-align: center;
+  text-shadow: 5px 6px 0px #353433;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+}
+
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(0eg);
+  }
+
+  75% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+
+.counters {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 57px;
+  color: #FEF033;
+  text-align: center;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0px #000000;
+
+}
+
+.flipbutton {
+  display: flex;
+  width: 291px;
+  padding: 50px 31px 9px 31px;
+  justify-content: center;
+  align-items: center;
+}
+
+#flip {
+  background-color: #F8ED53;
+  border-radius: 5px;
+  border: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  font-family: "Pixelify Sans", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  width: 50%;
+  height: 10%;
+  text-shadow: 2px 3px 0px #353433;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#flip:hover {
+  background-color: #FEF033;
+
+}
+
+#flip:active {
+  background-color: f4f318;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
